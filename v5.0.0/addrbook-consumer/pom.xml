@@ -5,7 +5,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                               http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>addrbook-commons</artifactId>
+  <artifactId>addrbook-comsumer</artifactId>
   <packaging>jar</packaging>
 
   <!--配置Addrbook Parent作为项目父级依赖-->
@@ -22,17 +22,13 @@
   </properties>
 
   <dependencies>
-    <!--配置Spring Cloud Starter Netflix Eureka Client依赖-->
+    <!--配置Addrbook Commons依赖-->
     <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+      <groupId>cn.ekgc.addrbook</groupId>
+      <artifactId>addrbook-commons</artifactId>
+      <version>${parent.version}</version>
     </dependency>
 
-    <!--配置Spring Cloud Starter OpendFeign依赖-->
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-openfeign</artifactId>
-    </dependency>
 
     <dependency>
       <groupId>junit</groupId>

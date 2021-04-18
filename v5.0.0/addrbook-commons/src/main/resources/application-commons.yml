@@ -1,0 +1,9 @@
+#####开启Spring Boot 的Bean 重写机制
+spring:
+   main:
+     allow-bean-definition-overriding: true
+  #####Eureka Client 连接 Eureka Server地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9999/eureka/
